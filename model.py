@@ -187,7 +187,7 @@ class PopMusicTransformer(object):
             # sampling
             _logit = _logits[-1, 0]
             word = self.temperature_sampling(
-                logits=_logit, 
+                logits=_logit,
                 temperature=temperature,
                 topk=topk)
             words[0].append(word)
